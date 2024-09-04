@@ -1,0 +1,183 @@
+Docmate
+    Client
+        api
+            axiosInstance.js
+
+        components
+            Chat
+                Message.jsx
+                MessageInput.jsx
+                Messages.jsx
+            Common
+                AuthForm.jsx
+                CustomTextField.jsx
+                CustomTypo.jsx
+                LoadingSpinner.jsx
+            Skeleton
+                MessageSkeleton.jsx
+
+        hooks
+            auth
+                useLogin.js
+                useLogout.js
+                useRegister.js
+
+            date
+                useFormateDOB.js
+
+            profile
+                useProfile.js
+
+            scheduleAppointment
+                useScheduleAppointment.js
+
+            chat
+                useGetMessages.js
+                useListenMessages.js
+                useSendMessages.js
+
+        pages
+            ScheduleAppointment
+                ScheduleAppointment.jsx
+                
+            DoctorDashboard
+                DoctorDashboard.jsx
+
+            Auth
+                Login.jsx
+                Register.jsx
+
+            Chat
+                Chat.jsx
+
+            DoctorList
+                DoctorList.jsx
+
+            Home
+                HomePage.jsx
+
+            PatientDashboard
+                PatientDashboard.jsx
+
+            Profile
+                Profile.jsx
+
+        store
+            models
+                chatModel.js
+                userModel.js
+                socketModel.js
+            store.js
+
+        utils
+            extractTime.js
+
+        styles
+            AuthForm.css
+
+        app.css
+        app.jsx
+        index.jsx
+        main.jsx
+        .eslintrc.cjs
+        index.html
+        .gitignore
+        package.json
+            "dependencies": {
+                "@emotion/react": "^11.11.4",
+                "@emotion/styled": "^11.11.5",
+                "@fontsource/roboto": "^5.0.13",
+                "@material-ui/core": "^4.12.4",
+                "@mui/icons-material": "^5.15.20",
+                "@mui/material": "^5.15.20",
+                "axios": "^1.7.2",
+                "date-fns": "^3.6.0",
+                "easy-peasy": "^6.0.4",
+                "prop-types": "^15.8.1",
+                "react": "^18.3.1",
+                "react-dom": "^18.3.1",
+                "react-hook-form": "^7.51.5",
+                "react-hot-toast": "^2.4.1",
+                "react-loading-spinner": "^1.0.12",
+                "react-router-dom": "^6.23.1",
+                "socket.io-client": "^4.7.5"
+            },
+            "devDependencies": {
+                "@types/react": "^18.2.66",
+                "@types/react-dom": "^18.2.22",
+                "@vitejs/plugin-react": "^4.2.1",
+                "eslint": "^8.57.0",
+                "eslint-plugin-react": "^7.34.1",
+                "eslint-plugin-react-hooks": "^4.6.0",
+                "eslint-plugin-react-refresh": "^0.4.6",
+                "vite": "^5.2.0"
+            }
+
+        vite.config.js
+        yarn.lock
+
+    Server
+        controller
+            appointment.controller.js
+            auth.controller.js
+            chat.controller.js
+            doctor.controller.js
+            profile.controller.js
+            user.controller.js
+            
+        db
+            mongoConnection.js
+
+        middleware
+            protectRoute.js
+
+        models
+            appointment.model.js
+            chat.model.js
+            doctor.model.js
+            message.model.js
+            user.model.js
+
+        routes
+            appointment.routes.js
+            chat.routes.js
+            doctor.routes.js
+            chat.routes.js
+            profile.routes.js
+            user.routes.js
+
+        socket
+            socket.js
+
+        utils
+            generateToken.js
+
+        validation
+            appointmentValidation.js
+            authValidation.js
+            doctorValidation.js
+
+        server.js
+
+    node_modules (for server)
+    .env(for server)
+    package.json(for server)
+            "dependencies": {
+                "bcrypt": "^5.1.1",
+                "cookie-parser": "^1.4.6",
+                "cors": "^2.8.5",
+                "dotenv": "^16.4.5",
+                "express": "^4.19.2",
+                "express-validator": "^7.1.0",
+                "jsonwebtoken": "^9.0.2",
+                "mongoose": "^8.4.1",
+                "socket.io": "^4.7.5",
+                "ws": "^8.18.0"
+            },
+            "devDependencies": {
+                "nodemon": "^3.1.3"
+            }
+            
+    yarn.lock
+
+
